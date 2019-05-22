@@ -447,7 +447,6 @@ void abm_grid::create_agent(real scalar r, real scalar c ,
 	universe.put(key,agent_id)
 	
 	key = make_key(r,c,t,0)
-	(universe.get(key))
 	universe.put(key,(universe.get(key), i))
 }
 
