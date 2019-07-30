@@ -56,6 +56,13 @@ when necessary and returns the key for the associative array {cmd:universe}{p_en
 class is created. It sets the scalar {cmd:setup} to 0.{p_end}
 {p2col:{helpb abm_grid_agent_loc:agent_loc()}}returns for a cell the row vector 
 of locations at which agents exist{p_end}
+{p2col:{helpb abm_grid_torus_closest:torus_closest()}}returns matrix of two coordinates such 
+that the distance between is closest on a torus.{p_end}
+{p2col:{helpb abm_grid_lerp:lerp()}}returns the closest cell that is {it:t} between 
+{it:orig} and {it:dest}{p_end}
+{p2col:{helpb abm_grid_comp_line:comp_line()}}sub-routine for 
+{help abm_grid_find_line:find_line()} which returns the coordinates of all cells 
+on a line {p_end}
 
 {p2col 6 23 25 8:{it:Protected variables}}{p_end}
 {p2col:{cmd:universe}}A 4 dimensional associative array containing the the grid. 

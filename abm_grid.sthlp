@@ -81,6 +81,10 @@ iteration to another iteration{p_end}
 {p2col:{helpb abm_grid_move_agents:move_agents()}}move all agent ids from a given cell to another 
 cell{p_end}
 
+{p2col 6 23 25 8:{it:relationship between two cells}}{p_end}
+{p2col:{helpb abm_grid_dist:dist()}}returns the distance between two cells{p_end}
+{p2col:{helpb abm_grid_find_line:find_line()}}returns the coordinates of all cells
+on a straight line between two cells{p_end}
 
 {p2col 6 23 25 8:{it:Export}}{p_end}
 {p2col:{helpb abm_grid_extract:extract()}}returns a matrix, where each row contains the row, 

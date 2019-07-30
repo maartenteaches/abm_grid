@@ -19,12 +19,12 @@ finding neighbours{p_end}
     {cmd:baserings()}	
 	
 {p 8 12 2}
-{it:real scalar}	
-    {cmd:out_of_bounds(}{it:real rowvector pos}{cmd:)}
+{it:real colvector}	
+    {cmd:out_of_bounds(}{it:real matrix pos}{cmd:)}
 	
 {p 8 12 2}	
-{it:real rowvector}
-    {cmd:torus_adj(}{it:real rowvector pos}{cmd:)}
+{it:real matrix}
+    {cmd:torus_adj(}{it:real matrix pos}{cmd:)}
 
 {p 8 12 2}
 {it:real matrix}	
@@ -84,12 +84,12 @@ it wants to store in the associative array {cmd:baserings}
         {it:result}:  {it:void}
 
     {cmd:out_of_bounds(}{it:pos}{cmd:)}
-           {it:pos}:  1 {it:x} 2
-        {it:result}:  1 {it:x} 1
+           {it:pos}:  {it:k x} 2
+        {it:result}:  {it:k x} 1
 	
     {cmd:torus_adj(}{it:pos}{cmd:)}
-           {it:pos}:  1 {it:x} 2
-        {it:result}:  1 {it:x} 2
+           {it:pos}:  {it:k x} 2
+        {it:result}:  {it:k x} 2
 		
     {cmd:neumannring(}{it:radius}{cmd:)}
         {it:radius}:  1 {it:x} 1
