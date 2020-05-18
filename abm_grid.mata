@@ -52,6 +52,7 @@ class abm_grid
 		real matrix    find_spiral()
 		real scalar    agent_id() 
 		real rowvector agent_ids()
+		real scalar    free_spot()
 		real scalar    has_agent()
 		void           copy_agent()  
 		void           copy_agents() 
@@ -619,6 +620,25 @@ void abm_grid::create_agent(real scalar r, real scalar c ,
 	
 	key = make_key(r,c,t,0)
 	universe.put(key,(universe.get(key), i))
+}
+
+real scalar abm_grid::free_spot(real scalar r, real scalar c, | real scalar t)
+{
+	real rowvector key, taken
+	real scalar    attempt , done
+	
+	is_setup()
+	
+	key = make_key(r,c,t,0)
+	taken = universe.get(key)
+	
+	done = 0
+	attempt = length(taken) 
+	while (!done) {
+		attempt = attempt + 1
+		if (!anyof(taken,attempt)) done = 1
+	}
+	return(attempt)
 }
 
 real scalar abm_grid::agent_id( real scalar r, real scalar c , | real scalar t, 
