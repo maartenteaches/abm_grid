@@ -70,6 +70,8 @@ cell contains one or more agents{p_end}
 location in a cell{p_end}
 {p2col:{helpb abm_grid_agent_ids:agent_ids()}}returns the agent ids for all 
 agents living in a given cell{p_end}
+{p2col:{helpb abm_grid_free_spot:free_spot()}}returns a position in a cell (dimension {it:i} 
+in the adress {it:r}, {it:c}, {it:t}, {it:i}) that is free{p_end}
 {p2col:{helpb abm_grid_copy_agent:copy_agent()}}copies the agent id from a given location at a given 
 cell to a new location on a new cell{p_end}
 {p2col:{helpb abm_grid_copy_agents:copy_agents()}}copy all agent ids from a given cell to another 
