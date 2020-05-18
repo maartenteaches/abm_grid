@@ -622,7 +622,7 @@ void abm_grid::create_agent(real scalar r, real scalar c ,
 	universe.put(key,(universe.get(key), i))
 }
 
-real scalar abm_grid::free_spot(real scalar r, real scalar c, | real scalar t)
+real scalar abm_grid::free_spot(real scalar r, real scalar c, real scalar t)
 {
 	real rowvector key, taken
 	real scalar    attempt , done
